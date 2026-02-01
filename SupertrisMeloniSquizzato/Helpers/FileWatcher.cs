@@ -1,9 +1,18 @@
 namespace SupertrisMeloniSquizzato.Helpers
 {
     /// <summary>
-    /// Monitora il file delle mosse per la modalità EvE
-    /// Notifica quando l'avversario fa una mossa
+    /// Monitora il file delle mosse e notifica quando l'avversario gioca.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Usa FileSystemWatcher per rilevare modifiche al file
+    /// - Legge l'ultima riga del file quando cambia
+    /// - Se diversa dall'ultima letta -> chiama callback
+    /// - Delay 500ms per assicurare scrittura completa
+    /// - AggiornaUltimaRiga(): previene loop (ignora proprie mosse)
+    /// 
+    /// EVENTO: OnFileChanged -> leggi ultima riga -> callback
     /// </summary>
+    
     internal class FileWatcher
     {
         private FileSystemWatcher watcher;

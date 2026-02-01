@@ -1,5 +1,17 @@
 ﻿namespace SupertrisMeloniSquizzato.Classes
 {
+    /// <summary>
+    /// Gestisce la griglia completa di 9 mini-tris disposti 3x3.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Contiene una matrice 3x3 di oggetti Tris
+    /// - Coordina le mosse tra i vari mini-tris
+    /// - Controlla vittoria globale: 3 mini-tris vinti in fila
+    /// - Genera lo stato completo (81 caratteri) per i bot
+    /// - Verifica se un tris è completato (vinto o pieno)
+    /// 
+    /// VITTORIA: come il tris normale ma con mini-tris invece di celle
+    /// </summary>
     internal class Supertris
     {
         private Tris[,] arrayOfMiniBoard;

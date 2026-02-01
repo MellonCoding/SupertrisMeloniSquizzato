@@ -1,11 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SupertrisMeloniSquizzato.Helpers
+﻿namespace SupertrisMeloniSquizzato.Helpers
 {
+    /// <summary>
+    /// Centralizza i colori del tema scuro dell'interfaccia.
+    /// 
+    /// COLORI:
+    /// - Sfondo: grigio molto scuro (#1E1E1E)
+    /// - Tris normale/attivo/completato: variazioni di grigio
+    /// - X: rosso (#DC5050)
+    /// - O: blu (#5096DC)
+    /// - Hover: grigio chiaro
+    /// - Testo: bianco
+    /// 
+    /// SCOPO: consistenza visiva in tutte le form
+    /// </summary>
+    
     internal class ColorManager
     {
         // Colori del tema

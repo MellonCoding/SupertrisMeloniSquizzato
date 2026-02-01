@@ -1,5 +1,18 @@
 ﻿namespace SupertrisMeloniSquizzato.Classes
 {
+    /// <summary>
+    /// Gestisce un singolo mini-tris 3x3.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Mantiene una griglia 3x3 di celle (char: '-' vuoto, 'X', 'O')
+    /// - Valida e esegue le mosse verificando che la cella sia vuota
+    /// - Controlla vittorie dopo ogni mossa (righe, colonne, diagonali)
+    /// - Una volta vinto, non accetta più mosse
+    /// - Può verificare se è pieno (tutte celle occupate)
+    /// 
+    /// STATO: immutabile dopo vittoria
+    /// </summary>
+    
     internal class Tris
     {
         private char[,] miniBoard;

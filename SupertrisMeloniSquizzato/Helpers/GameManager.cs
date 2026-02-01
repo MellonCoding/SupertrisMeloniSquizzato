@@ -2,6 +2,20 @@
 
 namespace SupertrisMeloniSquizzato.Helpers
 {
+    /// <summary>
+    /// Coordina il flusso del gioco e gestisce le regole del Super Tris.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Mantiene lo stato del gioco (board, turno, tris obbligatorio)
+    /// - Valida le mosse: controlla se rispettano il tris obbligatorio
+    /// - Calcola il prossimo tris obbligatorio dopo ogni mossa
+    /// - Se il prossimo tris è vinto/pieno -> mossa libera
+    /// - Alterna i turni tra X e O
+    /// - Verifica vittoria globale
+    /// 
+    /// REGOLA CHIAVE: la posizione dove giochi determina dove gioca l'avversario
+    /// </summary>
+    
     internal class GameManager
     {
         private Supertris board;

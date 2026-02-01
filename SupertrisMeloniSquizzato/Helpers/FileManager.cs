@@ -1,11 +1,16 @@
-﻿
-/// FILE MANAGER:
-/// - Start: Se il file al percorso "persorso" non esiste lo crea se esiste lo svuta, 
-///          questa funzione deve avere SOLO 1 reference o c'é un problema.
-/// - Write: Prende una stringa e la scrive su file, per ora non ci sono controlli, sarebbe meglio fare qualche controllo in effetti.
-
-namespace SupertrisMeloniSquizzato
+﻿namespace SupertrisMeloniSquizzato
 {
+    /// <summary>
+    /// Gestisce il file di comunicazione per la modalità EvE.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Start(): crea o svuota il file all'inizio partita
+    /// - Write(): appende una riga al file (formato: "X 4 5")
+    /// - Nessun lock: si affida alla sincronizzazione del FileWatcher
+    /// 
+    /// IMPORTANTE: Start() deve essere chiamato UNA SOLA VOLTA
+    /// </summary>
+    
     public class FileManager
     {
         private static string percorso;

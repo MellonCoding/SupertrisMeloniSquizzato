@@ -3,8 +3,18 @@
 namespace SupertrisMeloniSquizzato.Forms
 {
     /// <summary>
-    /// Dialog per scegliere se essere Giocatore 1 o 2 in modalità EvE
+    /// Dialog per scegliere ruolo in modalità EvE.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - 2 pulsanti: Giocatore 1 (X) o Giocatore 2 (O)
+    /// - Giocatore 1: fa prima mossa
+    /// - Giocatore 2: aspetta mossa avversario
+    /// - Imposta SonoGiocatore1 (bool)
+    /// - Ritorna DialogResult.OK se scelto
+    /// 
+    /// IMPORTANTE: determina chi inizia la partita
     /// </summary>
+    
     public partial class EvESetupDialog : Form
     {
         public bool SonoGiocatore1 { get; private set; }

@@ -1,5 +1,19 @@
 namespace SupertrisMeloniSquizzato.AI
 {
+    /// <summary>
+    /// Bot che usa l'algoritmo Minimax con potatura alpha-beta.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Esplora albero delle mosse possibili fino a profondità 5
+    /// - Per ogni mossa simula le risposte dell'avversario
+    /// - Assume che l'avversario giochi in modo ottimale
+    /// - Valuta posizioni con euristica (centro, angoli, vittorie)
+    /// - Potatura alpha-beta per velocizzare (taglia rami inutili)
+    /// - Prime 2 mosse casuali per variabilità
+    /// 
+    /// NON IMPARA: sempre stessa strategia, forte da subito
+    /// </summary>
+    
     internal class MinimaxBot : IBot
     {
         // -------- CONFIGURAZIONE --------

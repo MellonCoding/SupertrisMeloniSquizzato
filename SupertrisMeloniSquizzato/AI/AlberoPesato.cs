@@ -3,9 +3,20 @@ using System.Text;
 namespace SupertrisMeloniSquizzato.AI
 {
     /// <summary>
-    /// Bot che usa un albero pesato per apprendere le mosse migliori
-    /// Apprende tramite reinforcement learning giocando partite
+    /// Bot che impara giocando usando Reinforcement Learning.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Mantiene una tabella: stato_gioco -> pesi_mosse
+    /// - Chiave stato: boardState + trisObbligatoria
+    /// - Sceglie la mossa con peso maggiore
+    /// - Dopo vittoria: aumenta pesi delle mosse fatte (+0.1)
+    /// - Dopo sconfitta: diminuisce pesi delle mosse fatte (-0.1)
+    /// - Salva/carica pesi su file per mantenere apprendimento
+    /// - Ottimizzato: valuta 9 tris invece di 81 celle con mossa libera
+    /// 
+    /// IMPARA: migliora con l'esperienza, più partite = più forte
     /// </summary>
+
     internal class AlberoPesato : IBot
     {
         // Tabella che mappa stato -> pesi delle mosse

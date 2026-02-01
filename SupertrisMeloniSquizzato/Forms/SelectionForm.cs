@@ -4,6 +4,20 @@ using SupertrisMeloniSquizzato.Helpers;
 
 namespace SupertrisMeloniSquizzato
 {
+    /// <summary>
+    /// Menu principale per scegliere modalità di gioco.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - 4 pulsanti: PVP, PVE, EvE, Training
+    /// - Pulsante toggle per tipo bot (Albero/Algoritmico)
+    /// - Crea e apre GameForm con parametri corretti
+    /// - Per EvE: apre EvESetupDialog prima di GameForm
+    /// - Si nasconde quando si apre GameForm
+    /// - Viene mostrato quando GameForm si chiude
+    /// 
+    /// VARIABILI: modalità (0/1/2), tipo bot (1/2)
+    /// </summary>
+    
     public partial class SelectionForm : Form
     {
         private static int PLAYERvsPLAYERmod = 0;

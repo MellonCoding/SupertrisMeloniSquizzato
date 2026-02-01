@@ -3,6 +3,21 @@ using SupertrisMeloniSquizzato.AI;
 
 namespace SupertrisMeloniSquizzato
 {
+    /// <summary>
+    /// Interfaccia di gioco principale con griglia 9x9.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Crea 9 panel (mini-tris) con 9 bottoni ciascuno
+    /// - Gestisce click sui bottoni e valida mosse
+    /// - Coordina turni: giocatore -> bot (in PVE)
+    /// - Aggiorna visualizzazione: colori panel, turno, info
+    /// - In EvE: bot locale + FileWatcher per mosse remote
+    /// - Feedback visivo: cursori, panel oscurati durante bot
+    /// - Gestisce fine partita e vittoria
+    /// 
+    /// MODALITÀ: 0=PVP, 1=PVE, 2=EvE
+    /// </summary>
+    
     public partial class GameForm : Form
     {
         private GameManager gm;

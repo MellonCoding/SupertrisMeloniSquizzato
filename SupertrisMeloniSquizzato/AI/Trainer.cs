@@ -3,9 +3,19 @@
 namespace SupertrisMeloniSquizzato.AI
 {
     /// <summary>
-    /// Sistema di allenamento per l'AlberoPesato
-    /// Fa giocare il bot contro un RandomBot per fargli imparare le strategie
+    /// Sistema di allenamento per far giocare due bot l'uno contro l'altro.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - Fa giocare botAllenato vs botAvversario per N partite
+    /// - Alterna chi inizia (X/O) per bilanciare
+    /// - Simula partite complete gestendo turni e vittorie
+    /// - Notifica risultati ai bot dopo ogni partita
+    /// - Raccoglie statistiche: vittorie, sconfitte, pareggi
+    /// - Callback ogni 10 partite per aggiornare UI
+    /// 
+    /// USO TIPICO: AlberoPesato (impara) vs MinimaxBot (forte)
     /// </summary>
+   
     internal class Trainer
     {
         private AlberoPesato botAllenato;

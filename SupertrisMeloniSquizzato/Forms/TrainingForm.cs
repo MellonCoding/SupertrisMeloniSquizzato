@@ -4,8 +4,20 @@ using System.Diagnostics;
 namespace SupertrisMeloniSquizzato.Forms
 {
     /// <summary>
-    /// Form per visualizzare e controllare l'allenamento dell'AlberoPesato
+    /// Interfaccia per allenare l'AlberoPesato.
+    /// 
+    /// FUNZIONAMENTO:
+    /// - NumericUpDown per scegliere numero partite
+    /// - Avvia allenamento in background (async)
+    /// - Progress bar aggiornata ogni 10 partite
+    /// - Mostra statistiche in tempo reale
+    /// - Pulsanti salva/carica pesi
+    /// - Pulsante reset (ricrea bot da zero)
+    /// - Log con timestamp per monitorare progresso
+    /// 
+    /// CALLBACK: Trainer notifica ogni 10 partite -> aggiorna UI
     /// </summary>
+    
     public partial class TrainingForm : Form
     {
         private AlberoPesato bot;
