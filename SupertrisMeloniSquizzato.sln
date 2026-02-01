@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36908.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupertrisMeloniSquizzato", "SupertrisMeloniSquizzato\SupertrisMeloniSquizzato.csproj", "{318C1648-0C0B-40E3-BAE7-44E54D7F018F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{318C1648-0C0B-40E3-BAE7-44E54D7F018F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318C1648-0C0B-40E3-BAE7-44E54D7F018F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318C1648-0C0B-40E3-BAE7-44E54D7F018F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318C1648-0C0B-40E3-BAE7-44E54D7F018F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D08228DD-856B-42E8-9E75-79C4753C073E}
+	EndGlobalSection
+EndGlobal
